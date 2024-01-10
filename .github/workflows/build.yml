@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v2.4.0
         with:
           push: true
-          tags: twingate_client:latest
+          tags: rifqisah/twingate_client:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
