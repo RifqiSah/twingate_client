@@ -22,17 +22,17 @@ Change your service config from [Services](https://docs.twingate.com/docs/servic
 # Usage
 ```yml
 version: "3"
-	services:
-		twingate_client:
-		image: rifqisah/twingate_client:latest
-		container_name: twingate_client
-		stdin_open: true
-		tty: true
-		devices:
-		- /dev/net/tun
-		cap_add:
-		- NET_ADMIN
-		network_mode: host
-		volumes:
-		- ./service.key.json:/twingate/service.key.json:ro
+  services:
+    twingate_client:
+    image: rifqisah/twingate_client:latest
+    container_name: twingate_client
+    stdin_open: true
+    tty: true
+    devices:
+    - /dev/net/tun
+    cap_add:
+    - NET_ADMIN
+    network_mode: host
+    volumes:
+    - ./service.key.json:/twingate/service.key.json:ro
 ```
